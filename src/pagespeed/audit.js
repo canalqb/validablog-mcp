@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { getAuthenticatedClient } from '../auth/client.js';
 import { quotaManager } from '../quota/manager.js';
 import { CONFIG } from '../config.js';
@@ -158,6 +159,8 @@ ${
 `;
 }
 
-// Execução direta
-const urlArg = process.argv[2] || 'https://mundoereceitas.blogspot.com/';
-runPageSpeedAudit(urlArg).catch(console.error);
+// Execução direta via CLI
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  const urlArg = process.argv[2] || 'https://mundoereceitas.blogspot.com/';
+  runPageSpeedAudit(urlArg).catch(console.error);
+}

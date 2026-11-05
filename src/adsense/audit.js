@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { google } from 'googleapis';
 import { getAuthenticatedClient } from '../auth/client.js';
 import { quotaManager } from '../quota/manager.js';
@@ -209,6 +210,9 @@ ${
 `;
 }
 
-// Execução direta
-const domainArg = process.argv[2] || 'mundoereceitas.blogspot.com';
-auditAdSense(domainArg).catch(console.error);
+// Execução direta via CLI
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  const domainArg = process.argv[2] || 'mundoereceitas.blogspot.com';
+  auditAdSense(domainArg).catch(console.error);
+}
+

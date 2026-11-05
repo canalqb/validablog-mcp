@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { google } from 'googleapis';
 import { getAuthenticatedClient } from '../auth/client.js';
 import { quotaManager } from '../quota/manager.js';
@@ -221,7 +222,9 @@ ${thinPosts.length > 15 ? `\n*(... e mais ${thinPosts.length - 15} artigos adici
 `;
 }
 
-// Execução via linha de comando
-const blogIdArg = process.argv[2] || '2609663586053425832';
-fetchBlogInventory(blogIdArg).catch(console.error);
+// Execução direta via CLI
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  const blogIdArg = process.argv[2] || '2609663586053425832';
+  fetchBlogInventory(blogIdArg).catch(console.error);
+}
 
