@@ -13,7 +13,8 @@
     "adsense": "node src/adsense/audit.js",
     "pagespeed": "node src/pagespeed/audit.js",
     "mcp": "node src/mcp/server.js",
-    "mcp-sse": "node src/mcp/http-server.js"
+    "mcp-sse": "node src/mcp/http-server.js",
+    "fix-li-before": "node src/blogger/fix-li-before.js"
   },
   "keywords": [],
   "author": "",

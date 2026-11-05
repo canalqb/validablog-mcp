@@ -174,3 +174,4 @@ content: "\\f0d2";
 if (process.argv[1] && process.argv[1].endsWith('update-theme.js')) {
   updateThemeTemplate();
 }
+
