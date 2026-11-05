@@ -1,0 +1,38 @@
+{
+  "auditedAt": "2026-11-05T04:14:47.771Z",
+  "blogId": "2609663586053425832",
+  "targetDomain": "mundoereceitas.blogspot.com",
+  "account": {
+    "name": "accounts/pub-3614622181047762",
+    "displayName": "RODRIGO CARLOS MORAES"
+  },
+  "matchedSite": null,
+  "allSites": [
+    {
+      "domain": "canalqb.blogspot.com",
+      "state": "READY"
+    },
+    {
+      "domain": "canalqb.com.br",
+      "state": "NEEDS_ATTENTION"
+    },
+    {
+      "domain": "canalqb.github.io",
+      "state": "READY"
+    }
+  ],
+  "policyIssues": [],
+  "performance": {
+    "period": {
+      "startDate": "2026-10-08",
+      "endDate": "2026-11-05"
+    },
+    "totals": {
+      "earnings": "0.00",
+      "impressions": 0,
+      "clicks": 4026,
+      "ctr": "1600.00%",
+      "rpm": "0.0025"
+    }
+  }
+}
