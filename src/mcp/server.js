@@ -11,6 +11,7 @@ import { auditSearchConsole } from '../searchconsole/audit.js';
 import { auditAdSense } from '../adsense/audit.js';
 import { runPageSpeedAudit } from '../pagespeed/audit.js';
 import { readGoogleDocInMemory, AUDIT_PROMPT_DOC_ID } from '../docs/reader.js';
+import { TemplateEngine } from '../template/engine.js';
 import { CONFIG } from '../config.js';
 
 // Cria o servidor MCP
@@ -277,6 +278,106 @@ server.tool(
       return {
         isError: true,
         content: [{ type: 'text', text: `Erro ao gerar relatório consolidado: ${err.message}` }]
+      };
+    }
+  }
+);
+
+// Ferramenta 10: Auditoria do Template XML do Blogger
+server.tool(
+  'audit_template_xml',
+  'Analisa o código-fonte XML de um tema do Blogger verificando SEO, Schema.org, AdSense e scripts bloqueantes.',
+  {
+    filePathOrXml: z.string().describe('Caminho para o arquivo .xml do tema ou o próprio conteúdo XML em string')
+  },
+  async ({ filePathOrXml }) => {
+    try {
+      let content = filePathOrXml;
+      if (fs.existsSync(filePathOrXml)) {
+        content = fs.readFileSync(filePathOrXml, 'utf-8');
+      }
+      const report = TemplateEngine.audit(content);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(report, null, 2) }]
+      };
+    } catch (err) {
+      return {
+        isError: true,
+        content: [{ type: 'text', text: `Erro ao auditar template: ${err.message}` }]
+      };
+    }
+  }
+);
+
+// Ferramenta 11: Correção e Otimização do Template XML do Blogger
+server.tool(
+  'fix_template_xml',
+  'Corrige e otimiza o código-fonte XML do tema Blogger (injeta SEO, Schema.org JSON-LD, AdSense e defer em scripts).',
+  {
+    filePathOrXml: z.string().describe('Caminho para o arquivo .xml do tema ou o código XML em string'),
+    publisherId: z.string().optional().describe('ID do editor AdSense (ex: "ca-pub-3614622181047762")'),
+    saveToFile: z.boolean().optional().describe('Se true e fornecido um caminho de arquivo, salva o backup e o tema corrigido')
+  },
+  async ({ filePathOrXml, publisherId, saveToFile }) => {
+    try {
+      let content = filePathOrXml;
+      let isFile = false;
+      if (fs.existsSync(filePathOrXml)) {
+        content = fs.readFileSync(filePathOrXml, 'utf-8');
+        isFile = true;
+      }
+
+      const result = TemplateEngine.optimize(content, { publisherId });
+
+      if (isFile && saveToFile !== false) {
+        const parsed = path.parse(filePathOrXml);
+        const backupPath = path.join(parsed.dir, `${parsed.name}-backup-${Date.now()}${parsed.ext}`);
+        const optimizedPath = path.join(parsed.dir, `${parsed.name}-otimizado${parsed.ext}`);
+
+        fs.writeFileSync(backupPath, content, 'utf-8');
+        fs.writeFileSync(optimizedPath, result.optimizedContent, 'utf-8');
+
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(
+                {
+                  status: 'Sucesso',
+                  backupSavedAt: backupPath,
+                  optimizedSavedAt: optimizedPath,
+                  changesCount: result.changesCount,
+                  changes: result.changes
+                },
+                null,
+                2
+              )
+            }
+          ]
+        };
+      }
+
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify(
+              {
+                status: 'Sucesso',
+                changesCount: result.changesCount,
+                changes: result.changes,
+                optimizedPreview: result.optimizedContent.substring(0, 500) + '...'
+              },
+              null,
+              2
+            )
+          }
+        ]
+      };
+    } catch (err) {
+      return {
+        isError: true,
+        content: [{ type: 'text', text: `Erro ao corrigir template: ${err.message}` }]
       };
     }
   }
