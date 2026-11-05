@@ -47,14 +47,25 @@ export function saveTokens(newTokens) {
 }
 
 /**
- * Carrega o cliente autenticado a partir de token.json.
+ * Carrega o cliente autenticado a partir de token.json ou da variável GOOGLE_TOKENS_JSON (em nuvem/Render).
  */
 export function getAuthenticatedClient() {
-  if (!fs.existsSync(CONFIG.tokenPath)) {
-    throw new Error(`Arquivo ${CONFIG.tokenPath} não encontrado. Execute 'npm run auth' primeiro.`);
+  let tokens = null;
+
+  if (fs.existsSync(CONFIG.tokenPath)) {
+    tokens = JSON.parse(fs.readFileSync(CONFIG.tokenPath, 'utf-8'));
+  } else if (process.env.GOOGLE_TOKENS_JSON) {
+    try {
+      tokens = JSON.parse(process.env.GOOGLE_TOKENS_JSON);
+    } catch {
+      throw new Error('A variável de ambiente GOOGLE_TOKENS_JSON contém um JSON inválido.');
+    }
   }
 
-  const tokens = JSON.parse(fs.readFileSync(CONFIG.tokenPath, 'utf-8'));
+  if (!tokens) {
+    throw new Error(`Arquivo ${CONFIG.tokenPath} não encontrado e GOOGLE_TOKENS_JSON não configurada. Execute 'npm run auth' primeiro.`);
+  }
+
   const client = getOAuth2Client();
   client.setCredentials(tokens);
   return client;
