@@ -5739,7 +5739,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <b:section class='fbt-left-headline' id='left-headline' maxwidgets='100' name='Headline Left' showaddelement='yes'>
                   <b:widget id='PageList1' locked='false' title='CanalQb' type='PageList' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='pageListJson'><![CDATA[{"link1":{"href":"/p/politica-de-privacidade.html","position":1,"title":"Política de Privacidade"},"link0":{"href":"/p/sobre-o-canalqb-tecnologia-scripts-e.html","position":0,"title":"Sobre"},"link2":{"href":"https://www.youtube.com/channel/UCdOA_1KzXHIp3gmVyyYv2sg","position":2,"title":"Youtube @CanalQb"}}]]></b:widget-setting>
+                      <b:widget-setting name='pageListJson'><![CDATA[{"link1":{"href":"/p/politica-de-privacidade_01846915619.html","position":1,"title":"Política de Privacidade"},"link0":{"href":"/p/sobre-o-canalqb-tecnologia-scripts-e.html","position":0,"title":"Sobre"},"link2":{"href":"https://www.youtube.com/channel/UCdOA_1KzXHIp3gmVyyYv2sg","position":2,"title":"Youtube @CanalQb"}}]]></b:widget-setting>
                       <b:widget-setting name='homeTitle'>Página inicial</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
@@ -10993,7 +10993,7 @@ document.addEventListener('DOMContentLoaded', fetchPost);
                     <b:widget-setting name='link-1'>/p/declaracao-de-acessibilidade.html</b:widget-setting>
                     <b:widget-setting name='link-13'>/p/protecao-de-menores-online.html</b:widget-setting>
                     <b:widget-setting name='link-2'>/p/declaracao-de-monetizacao-e.html</b:widget-setting>
-                    <b:widget-setting name='link-12'>/p/politica-de-privacidade.html</b:widget-setting>
+                    <b:widget-setting name='link-12'>/p/politica-de-privacidade_01846915619.html</b:widget-setting>
                     <b:widget-setting name='link-15'>/p/about.html</b:widget-setting>
                     <b:widget-setting name='link-0'>/p/consentimento-de-cookies.html</b:widget-setting>
                     <b:widget-setting name='link-14'>/p/seus-direitos-lgpd-e-dsa.html</b:widget-setting>
@@ -11005,7 +11005,7 @@ document.addEventListener('DOMContentLoaded', fetchPost);
                     <b:widget-setting name='link-7'>/p/login-de-formularios.html</b:widget-setting>
                     <b:widget-setting name='link-8'>/p/notificacao-de-violacao-de-dados.html</b:widget-setting>
                     <b:widget-setting name='link-5'>/p/dmca-e-politica-de-direitos-autorais.html</b:widget-setting>
-                    <b:widget-setting name='link-6'>/p/fale-com-o-canalqb-contato-direto.html</b:widget-setting>
+                    <b:widget-setting name='link-6'>/p/contato-e-fale-conosco.html</b:widget-setting>
                     <b:widget-setting name='link-3'>/p/declaracao-de-transparencia-algoritmica.html</b:widget-setting>
                     <b:widget-setting name='link-4'>/p/blog-canalqb-disclaimer-isencao-de.html</b:widget-setting>
                     <b:widget-setting name='text-1'>Declaração de Acessibilidade</b:widget-setting>
@@ -15143,7 +15143,7 @@ function makeDraggable(element){
   <p>
     Usamos cookies para analisar o tráfego e melhorar sua experiência.
     Ao aceitar, você concorda com nossa
-    <a href='/p/politica-de-privacidade.html' target='_blank' rel='noopener noreferrer'>Política de Privacidade</a>.
+    <a href='/p/politica-de-privacidade_01846915619.html' target='_blank' rel='noopener noreferrer'>Política de Privacidade</a>.
   </p>
   <div id='cqb-consent-btns'>
     <button class='cqb-btn-decline' id='cqb-decline'>Recusar</button>
