@@ -1,0 +1,32 @@
+{
+  "auditedAt": "2026-11-05T04:09:49.875Z",
+  "blogId": "2609663586053425832",
+  "siteUrl": "sc-domain:mundoereceitas.blogspot.com",
+  "hasPropertyAccess": true,
+  "sitemaps": [
+    {
+      "path": "https://mundoereceitas.blogspot.com/sitemap.xml",
+      "lastSubmitted": "2026-05-05T11:44:24.548Z",
+      "isPending": false,
+      "isSitemapsIndex": false,
+      "type": "sitemap",
+      "lastDownloaded": "2026-05-26T19:40:22.577Z",
+      "warnings": "0",
+      "errors": "1"
+    }
+  ],
+  "analytics": {
+    "period": {
+      "startDate": "2026-10-08",
+      "endDate": "2026-11-05"
+    },
+    "summary": {
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": "0.00%",
+      "position": "0.0"
+    },
+    "topQueries": [],
+    "topPages": []
+  }
+}

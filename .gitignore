@@ -1,0 +1,21 @@
+# Arquivos e diretórios sensíveis
+.env
+.env.*
+token.json
+tokens/
+credentials.json
+service_account.json
+*.pem
+*.key
+implantacao.md
+
+# Dependências
+node_modules/
+package-lock.json
+
+# Logs e builds
+*.log
+dist/
+build/
+.cache/
+

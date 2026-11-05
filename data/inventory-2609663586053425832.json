@@ -1,0 +1,819 @@
+{
+  "generatedAt": "2026-11-05T04:06:55.758Z",
+  "blog": {
+    "id": "2609663586053425832",
+    "name": "Receitas do Mundo",
+    "description": "Receitas coletadas do mundo, faça hoje!",
+    "url": "https://mundoereceitas.blogspot.com/",
+    "published": "2026-05-05T07:56:30-03:00",
+    "updated": "2026-11-05T00:23:55-03:00"
+  },
+  "metrics": {
+    "totalPosts": 43,
+    "totalPages": 0,
+    "postsWithoutImages": 0,
+    "postsWithMissingAlt": 1,
+    "thinContentPosts": 0
+  },
+  "pages": [],
+  "posts": [
+    {
+      "id": "7486333394759077298",
+      "title": "Geleia de Morango Caseira: Ponto Perfeito em 35 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/11/geleia-de-morango-caseira-ponto.html",
+      "published": "2026-11-04T17:51:16-03:00",
+      "updated": "2026-11-04T17:51:49-03:00",
+      "labels": [
+        "café da manhã",
+        "conservas",
+        "doces",
+        "geleia de morango",
+        "morango",
+        "receitas"
+      ],
+      "wordCount": 1905,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "56602911014759455",
+      "title": "Atole de Rompope Cremoso: Receita Mexicana Fácil",
+      "url": "https://mundoereceitas.blogspot.com/2026/11/atole-de-rompope-cremoso-receita.html",
+      "published": "2026-11-01T16:20:56-03:00",
+      "updated": "2026-11-01T16:20:56-03:00",
+      "labels": [
+        "atole",
+        "atole de rompope",
+        "bebida mexicana",
+        "bebida quente",
+        "culinária mexicana",
+        "maisena",
+        "receita de inverno",
+        "receita mexicana",
+        "rompope"
+      ],
+      "wordCount": 3741,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "9136604118977228753",
+      "title": "Creme de Banana com Canela Cremoso e Fácil",
+      "url": "https://mundoereceitas.blogspot.com/2026/11/creme-de-banana-com-canela-cremoso-e.html",
+      "published": "2026-11-01T14:38:53-03:00",
+      "updated": "2026-11-01T14:38:53-03:00",
+      "labels": [
+        "banana",
+        "canela",
+        "creme de banana",
+        "creme de leite",
+        "culinária brasileira",
+        "leite condensado",
+        "receita caseira",
+        "receita fácil",
+        "sobremesa",
+        "sobremesa de colher"
+      ],
+      "wordCount": 3670,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "4954190334943614927",
+      "title": "Quadrados de Doce de Leite Cremoso em 20 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/09/quadrados-de-doce-de-leite-cremoso-em.html",
+      "published": "2026-09-19T19:46:54-03:00",
+      "updated": "2026-09-19T19:47:41-03:00",
+      "labels": [
+        "doce de leite",
+        "doces mineiros",
+        "receitas com leite em pó",
+        "receitas rápidas",
+        "sobremesas brasileiras"
+      ],
+      "wordCount": 2448,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "2415414414649833095",
+      "title": "Mascarpone Caseiro",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/mascarpone-caseiro.html",
+      "published": "2026-07-14T23:40:35-03:00",
+      "updated": "2026-07-14T23:40:35-03:00",
+      "labels": [
+        "Culinária Italiana",
+        "Mascarpone",
+        "Queijo",
+        "Receita"
+      ],
+      "wordCount": 3617,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "3014776505249613211",
+      "title": "Segredo Revelado: Receita de Pao de Limao Caseiro",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/segredo-revelado-receita-de-pao-de.html",
+      "published": "2026-07-14T21:30:16-03:00",
+      "updated": "2026-07-14T21:30:16-03:00",
+      "labels": [
+        "Blogger",
+        "IA",
+        "Sistemas",
+        "Tutorial"
+      ],
+      "wordCount": 3562,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "4391020311810261971",
+      "title": "Molho Rápido de Coquetel de Mariscos: Pronto em 5 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-rapido-de-coquetel-de-mariscos.html",
+      "published": "2026-07-11T20:16:51-03:00",
+      "updated": "2026-07-11T20:16:51-03:00",
+      "labels": [
+        "coquetel de mariscos",
+        "frutos do mar",
+        "molho para coquetel",
+        "molhos caseiros",
+        "receitas rápidas"
+      ],
+      "wordCount": 2193,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "2425558003621173398",
+      "title": "Molho Cremoso para Coquetel de Frutos do Mar em 10 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-cremoso-para-coquetel-de-frutos.html",
+      "published": "2026-07-11T20:10:44-03:00",
+      "updated": "2026-07-11T20:10:44-03:00",
+      "labels": [
+        "camarão",
+        "frutos do mar",
+        "molho",
+        "molho cremoso",
+        "molho de chili",
+        "receitas fáceis",
+        "receitas vintage"
+      ],
+      "wordCount": 1880,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "1214899263336596267",
+      "title": "Molho Rosa para Camarão em 5 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-rosa-para-camarao-em-5-minutos.html",
+      "published": "2026-07-11T18:48:18-03:00",
+      "updated": "2026-07-11T18:48:18-03:00",
+      "labels": [
+        "camarão",
+        "frutos do mar",
+        "molho",
+        "molho rosa",
+        "pink sauce",
+        "receitas fáceis"
+      ],
+      "wordCount": 1709,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "5760538164370907855",
+      "title": "Molho de Ervas Secas para Ostras Cruas em 10 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-de-ervas-secas-para-ostras-cruas.html",
+      "published": "2026-07-11T18:42:52-03:00",
+      "updated": "2026-07-11T18:42:52-03:00",
+      "labels": [
+        "ervas secas",
+        "frutos do mar",
+        "mignonette",
+        "molho",
+        "ostras",
+        "receitas fáceis",
+        "receitas práticas"
+      ],
+      "wordCount": 1941,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "6827031184674755660",
+      "title": "Molho de Ervas Frescas para Ostras Cruas em 10 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-de-ervas-frescas-para-ostras.html",
+      "published": "2026-07-11T18:37:16-03:00",
+      "updated": "2026-07-11T18:37:49-03:00",
+      "labels": [
+        "ervas frescas",
+        "frutos do mar",
+        "mignonette",
+        "molho",
+        "ostras",
+        "receitas fáceis",
+        "receitas francesas"
+      ],
+      "wordCount": 1844,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "954307379219069686",
+      "title": "Molho para Coquetel de Mariscos em 15 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/molho-para-coquetel-de-mariscos-em-15.html",
+      "published": "2026-07-11T18:30:51-03:00",
+      "updated": "2026-07-11T18:30:51-03:00",
+      "labels": [
+        "coquetel de camarão",
+        "frutos do mar",
+        "molho",
+        "molhos cremosos",
+        "receitas fáceis",
+        "receitas vintage"
+      ],
+      "wordCount": 1824,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "6476047488959662902",
+      "title": "Coquetel de Ostras com Catchup em 10 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-ostras-com-catchup-em-10.html",
+      "published": "2026-07-11T09:26:56-03:00",
+      "updated": "2026-07-11T09:26:56-03:00",
+      "labels": [
+        "aperitivos",
+        "catchup",
+        "coquetel",
+        "frutos do mar",
+        "ostras",
+        "receitas vintage"
+      ],
+      "wordCount": 1822,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "7647410884781174291",
+      "title": "Coquetel de Ostras com Sherry em 10 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-ostras-com-sherry-em-10.html",
+      "published": "2026-07-11T09:11:33-03:00",
+      "updated": "2026-07-11T09:12:07-03:00",
+      "labels": [
+        "aperitivos",
+        "coquetel",
+        "frutos do mar",
+        "jerez",
+        "ostras",
+        "receitas vintage",
+        "sherry"
+      ],
+      "wordCount": 1926,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "8123319718873351124",
+      "title": "Coquetel de Carne de Caranguejo: Receita Clássica Americana",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-carne-de-caranguejo-receita.html",
+      "published": "2026-07-10T23:40:51-03:00",
+      "updated": "2026-07-10T23:40:51-03:00",
+      "labels": [
+        "coquetel de caranguejo",
+        "entradas frias",
+        "frutos do mar",
+        "receitas americanas",
+        "receitas clássicas"
+      ],
+      "wordCount": 2616,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "1136824269490985653",
+      "title": "Gemada de Damasco ou Ameixa em 10 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/gemada-de-damasco-ou-ameixa-em-10.html",
+      "published": "2026-07-10T23:24:46-03:00",
+      "updated": "2026-07-10T23:24:46-03:00",
+      "labels": [
+        "ameixa",
+        "bebidas nutritivas",
+        "damasco",
+        "gemada",
+        "receitas de frutas",
+        "receitas fáceis"
+      ],
+      "wordCount": 1879,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "2418436309439303927",
+      "title": "Gemada com Leite (Milk Eggnog) Cremosa em 10 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/gemada-com-leite-milk-eggnog-cremosa-em.html",
+      "published": "2026-07-10T23:14:48-03:00",
+      "updated": "2026-07-10T23:14:48-03:00",
+      "labels": [
+        "bebidas com ovo",
+        "bebidas de festas",
+        "eggnog",
+        "gemada",
+        "receitas de natal",
+        "receitas fáceis"
+      ],
+      "wordCount": 1971,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "7032340566594837135",
+      "title": "Coquetel de Suco de Marisco (Clam Juice) em 10 Min",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-suco-de-marisco-clam-juice.html",
+      "published": "2026-07-10T23:09:56-03:00",
+      "updated": "2026-07-10T23:09:56-03:00",
+      "labels": [
+        "aperitivos",
+        "bebidas sem álcool",
+        "clam juice",
+        "coquetel",
+        "frutos do mar",
+        "receitas vintage"
+      ],
+      "wordCount": 1964,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "9074622956650698483",
+      "title": "Coquetel de Cranberry Caseiro em 20 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-cranberry-caseiro-em-20.html",
+      "published": "2026-07-10T22:34:26-03:00",
+      "updated": "2026-07-10T22:34:26-03:00",
+      "labels": [
+        "bebidas quentes e frias",
+        "coquetel",
+        "cranberry",
+        "oxicoco",
+        "receitas de inverno",
+        "receitas fáceis"
+      ],
+      "wordCount": 1946,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "4404422897462112796",
+      "title": "Coquetel Cítrico de Frutas: Pronto em 5 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-citrico-de-frutas-pronto-em-5.html",
+      "published": "2026-07-10T22:28:26-03:00",
+      "updated": "2026-07-10T22:28:26-03:00",
+      "labels": [
+        "bebidas sem álcool",
+        "coquetel",
+        "frutas cítricas",
+        "grapefruit",
+        "mocktail",
+        "receitas fáceis",
+        "verão"
+      ],
+      "wordCount": 2053,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "1650874830245907012",
+      "title": "Coquetel de Abacaxi com Toranja: Refresco Tropical Fácil",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-abacaxi-com-toranja.html",
+      "published": "2026-07-09T22:55:06-03:00",
+      "updated": "2026-07-09T22:55:06-03:00",
+      "labels": [
+        "coquetel sem álcool",
+        "drinks para festa",
+        "mocktail tropical",
+        "receita fácil",
+        "suco de abacaxi",
+        "suco de toranja"
+      ],
+      "wordCount": 1648,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "7374680136330045083",
+      "title": "Coquetel de Laranja e Lima: Refresco Cítrico em 5 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-laranja-e-lima-refresco.html",
+      "published": "2026-07-09T22:49:10-03:00",
+      "updated": "2026-07-09T22:49:10-03:00",
+      "labels": [
+        "coquetel sem álcool",
+        "drinks para festa",
+        "mocktail cítrico",
+        "receita fácil",
+        "suco de laranja",
+        "suco de lima"
+      ],
+      "wordCount": 1700,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "8965242441926473950",
+      "title": "Suco de Uva Branca e Laranja: Refresco em 5 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/suco-de-uva-branca-e-laranja-refresco.html",
+      "published": "2026-07-09T22:39:59-03:00",
+      "updated": "2026-07-09T22:41:03-03:00",
+      "labels": [
+        "bebida sem álcool",
+        "drinks para festa",
+        "mocktail",
+        "receita fácil",
+        "suco de laranja",
+        "suco de uva branca"
+      ],
+      "wordCount": 1741,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "402049516100124834",
+      "title": "Coquetel de Tomate com Laranja: Receita Cremosa e Rápida",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-tomate-com-laranja-receita.html",
+      "published": "2026-07-09T22:34:44-03:00",
+      "updated": "2026-07-09T22:34:44-03:00",
+      "labels": [
+        "como fazer tomato juice cocktail",
+        "coquetel sem álcool de tomate e laranja",
+        "receita de mocktail de tomate"
+      ],
+      "wordCount": 2298,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "6784128733034986037",
+      "title": "Coquetel de Abacaxi e Tomate: o Aperitivo que a Lei Seca Ajudou a Popularizar",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-abacaxi-e-tomate-o.html",
+      "published": "2026-07-09T20:47:55-03:00",
+      "updated": "2026-07-09T20:47:55-03:00",
+      "labels": [
+        "aperitivos",
+        "bebidas sem álcool",
+        "coquetéis",
+        "drinks",
+        "receitas vintage"
+      ],
+      "wordCount": 2306,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "4564518415728156175",
+      "title": "Coquetel de Abacaxi com Loganberry: a Bebida de Duas Fronteiras",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/coquetel-de-abacaxi-com-loganberry.html",
+      "published": "2026-07-09T19:17:57-03:00",
+      "updated": "2026-07-09T19:17:57-03:00",
+      "labels": [
+        "bebidas sem álcool",
+        "coquetéis",
+        "drinks",
+        "receitas de verão",
+        "sucos"
+      ],
+      "wordCount": 2224,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "2489702243040016961",
+      "title": "Creme de Tomate Gelado: Receita-Coquetel Clássica",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/creme-de-tomate-gelado-receita-coquetel.html",
+      "published": "2026-07-09T18:39:18-03:00",
+      "updated": "2026-07-09T18:39:18-03:00",
+      "labels": [
+        "coquetéis",
+        "entradas",
+        "receitas de verão",
+        "receitas frias",
+        "sopa de tomate"
+      ],
+      "wordCount": 2576,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "8365886888072869285",
+      "title": "Como Nasce uma Espuma: a Química das Claras em Neve",
+      "url": "https://mundoereceitas.blogspot.com/2026/07/como-nasce-uma-espuma-quimica-das.html",
+      "published": "2026-07-07T22:34:08-03:00",
+      "updated": "2026-07-07T22:35:21-03:00",
+      "labels": [
+        "ciência da confeitaria",
+        "claras em neve",
+        "merengue",
+        "proteína do ovo",
+        "química dos alimentos",
+        "técnica de confeitaria"
+      ],
+      "wordCount": 2294,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "6329212166015927044",
+      "title": "Coquetel de Abacaxi Fresco: Receita Clássica + 10 Variações",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/coquetel-de-abacaxi-fresco-receita.html",
+      "published": "2026-06-28T23:31:48-03:00",
+      "updated": "2026-06-28T23:32:15-03:00",
+      "labels": [
+        "abacaxi",
+        "bebidas",
+        "bebidas saudáveis",
+        "coquetéis",
+        "frutas tropicais",
+        "mocktail",
+        "receitas",
+        "receitas brasileiras",
+        "sem álcool",
+        "verão"
+      ],
+      "wordCount": 5278,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "952104182508063044",
+      "title": "Coquetel de Chucrute: Como Fazer o Sauerkraut Cocktail Alemão",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/coquetel-de-chucrute-como-fazer-o.html",
+      "published": "2026-06-28T22:54:35-03:00",
+      "updated": "2026-06-28T22:56:09-03:00",
+      "labels": [
+        "bebidas",
+        "fermentados",
+        "probióticos",
+        "receitas alemãs",
+        "receitas saudáveis",
+        "sem álcool",
+        "suco de chucrute",
+        "suco de tomate"
+      ],
+      "wordCount": 6012,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "2478170385750973782",
+      "title": "Creme de Tomate Gelado: Sopa ou Coquetel em 10 Minutos",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/creme-de-tomate-gelado-sopa-ou-coquetel.html",
+      "published": "2026-06-28T22:37:31-03:00",
+      "updated": "2026-06-28T22:37:31-03:00",
+      "labels": [
+        "aipo",
+        "bebidas",
+        "creme de tomate",
+        "entrada",
+        "receitas americanas",
+        "salsão",
+        "sem álcool",
+        "sopas frias",
+        "verão"
+      ],
+      "wordCount": 4312,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "5212469591777121727",
+      "title": "Coquetel de Tomate com Pepino: Refrescante e Sem Álcool",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/coquetel-de-tomate-com-pepino.html",
+      "published": "2026-06-28T21:56:20-03:00",
+      "updated": "2026-06-28T21:56:57-03:00",
+      "labels": [
+        "bebidas",
+        "mocktail",
+        "pepino",
+        "receitas saudáveis",
+        "refrescante",
+        "sem álcool",
+        "tomate",
+        "verão"
+      ],
+      "wordCount": 3809,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "1815228244923980992",
+      "title": "Coquetel de Suco de Tomate em Lata: Receita Rápida + 10 Variações",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/coquetel-de-suco-de-tomate-em-lata.html",
+      "published": "2026-06-28T21:13:54-03:00",
+      "updated": "2026-06-28T21:13:54-03:00",
+      "labels": [
+        "aperitivos",
+        "bebidas",
+        "coquetéis",
+        "culinária americana",
+        "festas",
+        "horseradish",
+        "raiz-forte",
+        "receitas",
+        "receitas rápidas",
+        "suco de tomate"
+      ],
+      "wordCount": 3229,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "6818894385428540222",
+      "title": "Coquetel de Suco de Tomate Cozido: Receita Clássica + 10 Variações",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/coquetel-de-suco-de-tomate-cozido.html",
+      "published": "2026-06-28T19:32:12-03:00",
+      "updated": "2026-06-28T19:32:12-03:00",
+      "labels": [
+        "aperitivos",
+        "bebidas",
+        "coquetéis",
+        "culinária americana",
+        "festas",
+        "receitas",
+        "receitas clássicas",
+        "receitas fáceis",
+        "suco de tomate",
+        "tomate"
+      ],
+      "wordCount": 2879,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "7915415170645375602",
+      "title": "Pão de Batata na Air Fryer: Receita Validada + 9 Variações",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/pao-de-batata-na-air-fryer-receita.html",
+      "published": "2026-06-27T21:17:07-03:00",
+      "updated": "2026-06-27T21:21:43-03:00",
+      "labels": [
+        "air fryer",
+        "culinária prática",
+        "pão caseiro",
+        "pão de batata",
+        "receitas"
+      ],
+      "wordCount": 3698,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "5909473911704048858",
+      "title": "Sumário Traduzido: Livro de Receitas do Século XX",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/sumario-traduzido-livro-de-receitas-do.html",
+      "published": "2026-06-26T22:11:19-03:00",
+      "updated": "2026-06-26T22:11:50-03:00",
+      "labels": [
+        "cozinha clássica",
+        "culinária",
+        "índice",
+        "livro de receitas",
+        "receitas",
+        "referência culinária",
+        "sumário",
+        "tradução"
+      ],
+      "wordCount": 1954,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "5525960199333381927",
+      "title": "Sáara Ocidental: História e Culinária Sahrawi em 1 Século",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/saara-ocidental-historia-e-culinaria.html",
+      "published": "2026-06-22T13:45:05-03:00",
+      "updated": "2026-06-22T13:48:08-03:00",
+      "labels": [
+        "África",
+        "culinária",
+        "cultura",
+        "gastronomia",
+        "história",
+        "pratos típicos",
+        "Sáara Ocidental",
+        "Sahrawi"
+      ],
+      "wordCount": 3201,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "1195684016215115868",
+      "title": "Nhoque de Batata Italiano: Receita Original e 10 Variações",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/nhoque-de-batata-italiano-receita.html",
+      "published": "2026-06-21T10:07:27-03:00",
+      "updated": "2026-06-21T18:04:45-03:00",
+      "labels": [
+        "cozinha italiana",
+        "culinária italiana",
+        "gastronomia",
+        "gnocchi",
+        "massas",
+        "nhoque",
+        "receitas"
+      ],
+      "wordCount": 4734,
+      "imagesCount": 12,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "8078229571863325188",
+      "title": "10 Variações de Massa + 10 Cremes Retrô dos Anos 80/90 — Bolo e Sonho",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/10-variacoes-de-massa-10-cremes-retro.html",
+      "published": "2026-06-17T00:07:32-03:00",
+      "updated": "2026-06-17T00:07:32-03:00",
+      "labels": [
+        "anos 80",
+        "anos 90",
+        "bolo recheado",
+        "confeitaria",
+        "cremes retrô",
+        "massa de sonho",
+        "panificação",
+        "receita"
+      ],
+      "wordCount": 1988,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "5862719318660743307",
+      "title": "Massa de Sonho Perfeita: Receita + 5 Variações de Pão — @CanalQb",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/massa-de-sonho-perfeita-receita-5.html",
+      "published": "2026-06-16T23:39:20-03:00",
+      "updated": "2026-06-16T23:39:20-03:00",
+      "labels": [
+        "confeitaria",
+        "culinária brasileira",
+        "massa fermentada",
+        "pão doce",
+        "receita",
+        "sonho"
+      ],
+      "wordCount": 1324,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "20974399577996135",
+      "title": "Indonésia - Susu Jagung: Receita de Leite de Milho Caseiro Cremoso",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/indonesia-susu-jagung-receita-de-leite.html",
+      "published": "2026-06-12T00:17:21-03:00",
+      "updated": "2026-06-12T00:17:21-03:00",
+      "labels": [
+        "bebidas",
+        "gastronomia indonésia",
+        "Indonésia",
+        "leite vegetal",
+        "receitas",
+        "receitas caseiras"
+      ],
+      "wordCount": 1855,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "7445562677092169763",
+      "title": "Italia - Panades de Xot e Pèsols: Receita Tradicional da Páscoa",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/italia-panades-de-xot-e-pesols-receita.html",
+      "published": "2026-06-11T23:49:11-03:00",
+      "updated": "2026-06-11T23:59:14-03:00",
+      "labels": [
+        "Italia",
+        "Pascoa"
+      ],
+      "wordCount": 2116,
+      "imagesCount": 1,
+      "imagesMissingAlt": 0
+    },
+    {
+      "id": "9211265148637564805",
+      "title": "Pratos da Semana em SP: História, Receitas e Cultura | @CanalQb | 2026",
+      "url": "https://mundoereceitas.blogspot.com/2026/06/pratos-da-semana-em-sp-historia.html",
+      "published": "2026-06-06T23:21:15-03:00",
+      "updated": "2026-06-06T23:40:56-03:00",
+      "labels": [
+        "Comidas Tipicas",
+        "culinária",
+        "cultura alimentar",
+        "feijoada",
+        "gastronomia",
+        "história",
+        "receitas",
+        "São Paulo",
+        "tradições brasileiras",
+        "virado à paulista"
+      ],
+      "wordCount": 5215,
+      "imagesCount": 8,
+      "imagesMissingAlt": 7
+    }
+  ]
+}
