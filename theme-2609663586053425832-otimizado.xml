@@ -3055,6 +3055,46 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <script async='async' crossorigin='anonymous' expr:src='"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + data:adClientId' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614622181047762'></script>
     <!-- [/VALIDABLOG] -->
       
+
+    <!-- [VALIDABLOG] Correção Definitiva para Numeração de Passos (evita sobreposição) -->
+    <style>
+      .post-body ol.post_steps, ol.post_steps, .post_steps {
+        list-style: none !important;
+        counter-reset: passo !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+      }
+      .post-body ol.post_steps > li, ol.post_steps li, .post_steps li {
+        position: relative !important;
+        padding: 16px 20px 16px 68px !important;
+        margin-bottom: 14px !important;
+        border: 1px solid #e0e0e0 !important;
+        border-radius: 10px !important;
+        line-height: 1.7 !important;
+        list-style: none !important;
+        display: block !important;
+        box-sizing: border-box !important;
+      }
+      .post-body ol.post_steps > li::before, ol.post_steps li::before, .post_steps li::before {
+        content: counter(passo) !important;
+        position: absolute !important;
+        left: 18px !important;
+        top: 16px !important;
+        width: 34px !important;
+        height: 34px !important;
+        border-radius: 50% !important;
+        background: #28a745 !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        z-index: 10 !important;
+      }
+    </style>
+
 </head>
 <body expr:class='data:blog.pageType'>
 <!-- Skip Links for Accessibility -->
@@ -5096,30 +5136,22 @@ width: 100%;
 
 <div id='lowerbar-wrapper'> 
 <b:section class='lowerbar ready-widget' id='Footer Widget (A)' preferred='yes'>
-   <b:widget id='HTML3' locked='false' title='Masterchef' type='HTML' version='1'>
+   <b:widget id='HTML3' locked='false' title='Sobre Nós' type='HTML' version='1'>
      <b:widget-settings>
-       <b:widget-setting name='content'><![CDATA[<div class="about-widget-image">
-							<img src="https://2.bp.blogspot.com/-u5orqsKiMYM/V6xh6r77tsI/AAAAAAAAArM/X7L7eSMG_EwotXqLdZgAKtZEGyPjFIRVQCLcB/s1600/looks006-690x455-1442922083.jpg" alt="About Me" original="https://2.bp.blogspot.com/-u5orqsKiMYM/V6xh6r77tsI/AAAAAAAAArM/X7L7eSMG_EwotXqLdZgAKtZEGyPjFIRVQCLcB/s1600/looks006-690x455-1442922083.jpg" />
-						</div>
-<div style="text-align: justify">Munere veritus fierent cu sed, congue altera mea te, ex clita eripuit evertitur duo. Legendos tractatos honestatis ad mel. Legendos tractatos honestatis ad mel.
-, <a href="#" style="
-    text-decoration: underline;
-">click here →</a></div>
+       <b:widget-setting name='content'><![CDATA[<div class="about-widget-text" style="text-align: justify; color: #666; line-height: 1.7; font-size: 14px;">
+  O <strong>Receitas do Mundo</strong> é o seu portal de referência em gastronomia prática, técnicas culinárias e receitas testadas com medidas exatas. Conteúdo desenvolvido com rigor editorial e compromisso com o leitor.
+  <br/><br/>
+  <a href="https://mundoereceitas.blogspot.com/p/sobre-nos-e-diretrizes-editoriais.html" style="color: #28a745; text-decoration: underline; font-weight: bold;">Conheça nossa história e diretrizes →</a>
+</div>
 
-<div class="icons-social">
+<div class="icons-social" style="margin-top: 15px;">
 <ul id="social">
-<li><a class="facebook" href="#" title="facebook"></a></li>
-<li><a class="twitter" href="#" title="twitter"></a></li>
-<li><a class="instagram" href="#" title="instagram"></a></li>
-<li><a class="pinterest" href="#" title="pinterest"></a></li>
+<li><a class="facebook" href="https://mundoereceitas.blogspot.com/" title="facebook"></a></li>
+<li><a class="twitter" href="https://mundoereceitas.blogspot.com/" title="twitter"></a></li>
+<li><a class="instagram" href="https://mundoereceitas.blogspot.com/" title="instagram"></a></li>
+<li><a class="pinterest" href="https://mundoereceitas.blogspot.com/" title="pinterest"></a></li>
 </ul></div>
 <style>
-.about-widget-image img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 100%;
-}
 .icons-social li {
 display: inline;
 padding: 0;
@@ -5160,22 +5192,16 @@ content: "\f16d";
 .icons-social .pinterest:before {
 content: "\f0d2";
 }
-.about-widget-image {
-    margin-right: 15px;
-    float: left;
-}</style>]]></b:widget-setting>
+</style>]]></b:widget-setting>
      </b:widget-settings>
      <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
+  <b:if cond='data:title != ""'>
     <h2 class='title'><data:title/></h2>
   </b:if>
   <div class='widget-content'>
     <data:content/>
   </div>
-
- <div style='clear: both;'/>
-<!--b:include name='quickedit'/--> 
+  <div style='clear: both;'/>
 </b:includable>
    </b:widget>
  </b:section> 
@@ -5312,8 +5338,16 @@ content: "\f0d2";
 <div style='clear: both;'/>
 <div id='jugas_footer'>
         <div class='copy-container row'>
-         
-                    <div class='jugas_footer_copyright'>
+          <div class='footer-compliance-nav' style='width: 100%; text-align: center; margin-bottom: 14px; padding: 10px 0;'>
+            <ul style='list-style: none; padding: 0; margin: 0; display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 18px;'>
+              <li><a href='https://mundoereceitas.blogspot.com/p/politica-de-privacidade-e-cookies.html' style='color: #888; text-decoration: none; font-size: 13px; font-weight: 500;'>Política de Privacidade</a></li>
+              <li><a href='https://mundoereceitas.blogspot.com/p/termos-de-uso.html' style='color: #888; text-decoration: none; font-size: 13px; font-weight: 500;'>Termos de Uso</a></li>
+              <li><a href='https://mundoereceitas.blogspot.com/p/sobre-nos-e-diretrizes-editoriais.html' style='color: #888; text-decoration: none; font-size: 13px; font-weight: 500;'>Sobre Nós</a></li>
+              <li><a href='https://mundoereceitas.blogspot.com/p/contato.html' style='color: #888; text-decoration: none; font-size: 13px; font-weight: 500;'>Contato</a></li>
+              <li><a href='https://mundoereceitas.blogspot.com/p/aviso-legal-e-isencao-de.html' style='color: #888; text-decoration: none; font-size: 13px; font-weight: 500;'>Aviso Legal</a></li>
+            </ul>
+          </div>
+          <div class='jugas_footer_copyright'>
                     <div class='copyright-area'>&#169; 2026 Receitas do Mundo. Todos os direitos reservados.</div>
                     </div>
                <b:section class='bottom-bar-social blue' id='Footer social widget' maxwidgets='100' name='Footer Social Widget' showaddelement='yes'>
