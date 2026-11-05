@@ -5,13 +5,15 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/mcp/http-server.js",
     "auth": "node src/auth/oauth.js",
     "test-token": "node src/auth/test-token.js",
     "inventory": "node src/blogger/inventory.js",
     "searchconsole": "node src/searchconsole/audit.js",
     "adsense": "node src/adsense/audit.js",
     "pagespeed": "node src/pagespeed/audit.js",
-    "mcp": "node src/mcp/server.js"
+    "mcp": "node src/mcp/server.js",
+    "mcp-sse": "node src/mcp/http-server.js"
   },
   "keywords": [],
   "author": "",
