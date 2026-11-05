@@ -32,7 +32,8 @@ export const CONFIG = {
     'https://www.googleapis.com/auth/analytics.readonly',
     // 5. Google Tag Manager
     'https://www.googleapis.com/auth/tagmanager.readonly',
-    // 6. Google Drive (Condicional / Opcional para salvar relatórios)
+    // 6. Google Drive & Docs (Leitura de documentos de prompt e templates)
+    'https://www.googleapis.com/auth/drive.readonly',
     'https://www.googleapis.com/auth/drive.file'
   ]
 };

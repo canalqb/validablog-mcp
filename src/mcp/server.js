@@ -2,12 +2,16 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 import { google } from 'googleapis';
+import fs from 'fs';
+import path from 'path';
 import { getAuthenticatedClient } from '../auth/client.js';
 import { quotaManager } from '../quota/manager.js';
 import { fetchBlogInventory } from '../blogger/inventory.js';
 import { auditSearchConsole } from '../searchconsole/audit.js';
 import { auditAdSense } from '../adsense/audit.js';
 import { runPageSpeedAudit } from '../pagespeed/audit.js';
+import { readGoogleDocInMemory, AUDIT_PROMPT_DOC_ID } from '../docs/reader.js';
+import { CONFIG } from '../config.js';
 
 // Cria o servidor MCP
 const server = new McpServer({
@@ -36,12 +40,7 @@ server.tool(
       }));
 
       return {
-        content: [
-          {
-            type: 'text',
-            text: JSON.stringify({ blogs }, null, 2)
-          }
-        ]
+        content: [{ type: 'text', text: JSON.stringify({ blogs }, null, 2) }]
       };
     } catch (err) {
       return {
@@ -100,12 +99,7 @@ server.tool(
     try {
       const result = await auditSearchConsole(targetUrl, blogId || 'default');
       return {
-        content: [
-          {
-            type: 'text',
-            text: JSON.stringify(result, null, 2)
-          }
-        ]
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }]
       };
     } catch (err) {
       return {
@@ -128,12 +122,7 @@ server.tool(
     try {
       const result = await auditAdSense(targetDomain, blogId || 'default');
       return {
-        content: [
-          {
-            type: 'text',
-            text: JSON.stringify(result, null, 2)
-          }
-        ]
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }]
       };
     } catch (err) {
       return {
@@ -156,12 +145,7 @@ server.tool(
     try {
       const result = await runPageSpeedAudit(targetUrl, blogId || 'default');
       return {
-        content: [
-          {
-            type: 'text',
-            text: JSON.stringify(result, null, 2)
-          }
-        ]
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }]
       };
     } catch (err) {
       return {
@@ -172,7 +156,62 @@ server.tool(
   }
 );
 
-// Ferramenta 6: Status do Gerenciador de Cotas (R$ 0)
+// Ferramenta 6: Leitor Dinâmico de Google Docs em Memória (Sem baixar arquivo)
+server.tool(
+  'read_google_doc',
+  'Lê o conteúdo de um Google Doc dinamicamente em memória via API sem baixar o arquivo para o disco.',
+  {
+    docUrlOrId: z
+      .string()
+      .optional()
+      .describe('URL ou ID do documento Google Docs (padrão: documento oficial de prompt da auditoria)')
+  },
+  async ({ docUrlOrId }) => {
+    try {
+      const docContent = await readGoogleDocInMemory(docUrlOrId || AUDIT_PROMPT_DOC_ID);
+      return {
+        content: [
+          {
+            type: 'text',
+            text: docContent
+          }
+        ]
+      };
+    } catch (err) {
+      return {
+        isError: true,
+        content: [{ type: 'text', text: `Erro ao ler Google Doc: ${err.message}` }]
+      };
+    }
+  }
+);
+
+// Ferramenta 7: Obter Prompt Oficial da Auditoria
+server.tool(
+  'get_audit_prompt',
+  'Obtém o prompt oficial de auditoria diretamente do Google Docs em tempo real.',
+  {},
+  async () => {
+    try {
+      const promptText = await readGoogleDocInMemory(AUDIT_PROMPT_DOC_ID);
+      return {
+        content: [
+          {
+            type: 'text',
+            text: promptText
+          }
+        ]
+      };
+    } catch (err) {
+      return {
+        isError: true,
+        content: [{ type: 'text', text: `Erro ao obter prompt de auditoria: ${err.message}` }]
+      };
+    }
+  }
+);
+
+// Ferramenta 8: Status do Gerenciador de Cotas (R$ 0)
 server.tool(
   'get_quota_status',
   'Retorna o consumo atual de cotas gratuitas do dia e a margem preventiva de segurança.',
@@ -189,11 +228,65 @@ server.tool(
   }
 );
 
+// Ferramenta 9: Gerar Relatório Consolidado de Auditoria e Pendências
+server.tool(
+  'generate_consolidated_report',
+  'Cruza os dados de inventário, Search Console, AdSense e PageSpeed com o prompt do Google Docs para gerar o relatório final de pendências.',
+  {
+    blogId: z.string().describe('ID do blog (ex: "2609663586053425832")')
+  },
+  async ({ blogId }) => {
+    try {
+      // 1. Tentar ler o prompt oficial do Google Docs em memória
+      let promptText = '';
+      try {
+        promptText = await readGoogleDocInMemory(AUDIT_PROMPT_DOC_ID);
+      } catch (e) {
+        promptText = `[Aviso: Não foi possível obter o prompt em tempo real do Google Docs: ${e.message}]`;
+      }
+
+      // 2. Coletar os dados já auditados das fases 1 a 4
+      const invPath = path.join(CONFIG.rootDir, 'data', `inventory-${blogId}.json`);
+      const scPath = path.join(CONFIG.rootDir, 'data', `searchconsole-${blogId}.json`);
+      const adsPath = path.join(CONFIG.rootDir, 'data', `adsense-${blogId}.json`);
+      const psPath = path.join(CONFIG.rootDir, 'data', `pagespeed-${blogId}.json`);
+
+      const inventory = fs.existsSync(invPath) ? JSON.parse(fs.readFileSync(invPath, 'utf-8')) : null;
+      const searchConsole = fs.existsSync(scPath) ? JSON.parse(fs.readFileSync(scPath, 'utf-8')) : null;
+      const adsense = fs.existsSync(adsPath) ? JSON.parse(fs.readFileSync(adsPath, 'utf-8')) : null;
+      const pagespeed = fs.existsSync(psPath) ? JSON.parse(fs.readFileSync(psPath, 'utf-8')) : null;
+
+      const summary = {
+        generatedAt: new Date().toISOString(),
+        blogId,
+        auditPromptSource: `https://docs.google.com/document/d/${AUDIT_PROMPT_DOC_ID}`,
+        hasPromptLoaded: Boolean(promptText && !promptText.startsWith('[Aviso')),
+        promptInstructions: promptText,
+        diagnostics: {
+          inventory: inventory ? inventory.metrics : 'Pendente',
+          searchConsole: searchConsole ? { siteUrl: searchConsole.siteUrl, sitemaps: searchConsole.sitemaps } : 'Pendente',
+          adsense: adsense ? { account: adsense.account, matchedSite: adsense.matchedSite, policyIssues: adsense.policyIssues } : 'Pendente',
+          pagespeed: pagespeed ? { mobile: pagespeed.results?.mobile?.scores, desktop: pagespeed.results?.desktop?.scores } : 'Pendente'
+        }
+      };
+
+      return {
+        content: [{ type: 'text', text: JSON.stringify(summary, null, 2) }]
+      };
+    } catch (err) {
+      return {
+        isError: true,
+        content: [{ type: 'text', text: `Erro ao gerar relatório consolidado: ${err.message}` }]
+      };
+    }
+  }
+);
+
 // Inicia o transporte Stdio
 async function run() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('ValidaBlog MCP Server rodando via stdio...');
+  console.error('ValidaBlog MCP Server rodando via stdio com leitor dinâmico do Google Docs...');
 }
 
 run().catch((err) => {
