@@ -9,7 +9,8 @@
     "test-token": "node src/auth/test-token.js",
     "inventory": "node src/blogger/inventory.js",
     "searchconsole": "node src/searchconsole/audit.js",
-    "adsense": "node src/adsense/audit.js"
+    "adsense": "node src/adsense/audit.js",
+    "pagespeed": "node src/pagespeed/audit.js"
   },
   "keywords": [],
   "author": "",
